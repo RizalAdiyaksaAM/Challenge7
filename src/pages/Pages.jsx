@@ -11,9 +11,11 @@ export const Pages = () => {
   }, [])
 
   return (
-    <div  className="w-full h-screen flex justify-between items-center bg-black px-[10rem]">
-      <div data-aos="fade-up" data-aos-duration="3000"  className="text-white  space-y-4  ">
-        <svg 
+    <div  className="w-full h-screen flex text-center lg:text-justify lg:justify-between justify-center items-center bg-black px-[10rem]">
+      <div data-aos="fade-up" data-aos-duration="3000"  className="text-white   space-y-5  ">
+        <div className="flex justify-center lg:justify-start">
+
+        <svg className=""
           xmlns="http://www.w3.org/2000/svg"
           width="50"
           height="51"
@@ -51,22 +53,23 @@ export const Pages = () => {
             </clipPath>
           </defs>
         </svg>
+        </div>
         <p  className="font-costum font-bold text-6xl">
           RIZAL <br></br> ADIYAKSA AM
         </p>
-        <p  className="font-costum font-medium text-2xl ">
+        <p  className="font-costum font-medium text-2xl  ">
           Study Independent Front End Developer <br></br> Binar Academy
         </p>
-        <div >
+        <div className="" >
           <a 
-            className="bg-[#933093] px-8 py-2 rounded-3xl font-costum font-bold hover:bg-[#79197E]"
+            className="bg-[#933093] px-8 py-2  rounded-3xl font-costum font-bold hover:bg-[#79197E]"
             href="https://www.instagram.com/rzal_ady/#">
             Follow
           </a>
         </div>
       </div>
-      <div data-aos="zoom-in" data-aos-duration="2000" className="">
-        <img height={100} width={550} src={image} />
+      <div data-aos="zoom-in" data-aos-duration="2000" className="hidden lg:block ">
+        <img className="" height={100} width={550} src={image} />
       </div>
     </div>
   );
